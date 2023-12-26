@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Jokenpô</h1>
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#128074;</button>
+            <button id="paper" onclick="playHuman('paper')"> &#128400;</button>
+            <button id="scissors" onclick="playHuman('scissors')">&#9996;</button>
+        </div>
+        <p class="result"></p>
+
+        <p class="score">Seu Score: <span id="score">0</span></p> <br>
+        <p class="pc-score">Score da Máquina: <span id="pc-score">0</span></p>
+    </main>
+</body>
+
+<script src="./script.js"></script>
+
+</html>

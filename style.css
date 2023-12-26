@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("./assets/gyhyom.gif") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#rock {
+    background-color: #fff;
+}
+
+#rock:hover {
+    background-color: grey;
+    opacity: 0.7;
+}
+
+#rock:active {
+    opacity: 1.0;
+}
+
+#paper {
+    background-color: #fff;
+}
+
+#paper:hover {
+    background-color: rgba(239, 67, 67, 0.999);
+    opacity: 0.7;
+}
+
+#paper:active {
+    opacity: 1.0;
+}
+
+#scissors {
+    background-color: #fff;
+}
+
+#scissors:hover {
+    background-color: rgba(182, 239, 67, 0.999);
+    opacity: 0.7;
+}
+
+#scissors:active {
+    opacity: 1.0;
+}
+
+p {
+    font-weight: bold;
+    margin: 5px;
+}
+.result{
+    color: rgb(227, 24, 180);
+}
+
+.score span {
+    color: rgb(22, 16, 201);
+}
+
+.pc-score span {
+    color: rgb(221, 124, 12);
+}
+
