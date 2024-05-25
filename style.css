@@ -11,7 +11,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background: url("./assets/gyhyom.gif") no-repeat center center fixed;
+    background: url("assets/Jokenpo_background.gif") no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
@@ -107,3 +107,9 @@ p {
     color: rgb(221, 124, 12);
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        background: url("assets/jokenpo_mobile_bg.gif") center center fixed;
+        background-position-y: bottom;
+    }
+}
